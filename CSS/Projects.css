@@ -1,0 +1,424 @@
+* 
+{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root
+{
+
+/* header */
+--color-aHeader: white;
+--color-JX: white;
+
+--size-aHeader: 20px;
+--size-JX: 30px;
+
+--background-header: white;
+
+
+/* main */
+--size-h1Main: 65px;
+--size-pMain: 30px;
+
+
+
+/* background */
+
+--background-JX: rgb(253, 163, 17);
+--background-a: rgba(255, 255, 255, 0.836);
+
+/* our working process */
+
+--border-WorkingProcess: rgb(253, 163, 17);
+--color-iWorkingProcess: rgb(23,25,24);
+
+/* footer */
+
+--color-icon: white;
+--color-copy: gray;
+--color-aFooter: white;
+--background-footer: rgb(23,25,24);
+
+
+
+/* font size */
+
+--size-h1: 60px;
+--size-h2: 40px;
+--size-h3: 22px;
+--size-p: 22px;
+--size-a: 20px;
+
+}
+
+
+/* header */
+
+/* down */
+
+header.down
+{
+    background-color: var(--background-header);
+
+    padding: 5px 10px;
+    z-index: 10;
+
+    border-bottom: solid black 2px;
+}
+
+header.down a
+{
+    color: black;
+}
+
+
+header
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    position: fixed;
+    transition: 0.7s;
+    
+    top: 0;
+    right: 0;
+    left: 0;
+
+    padding: 15px 20px;
+    font-family: Helvetica, sans-serif;
+}
+
+
+
+
+header ul
+{
+    display: flex;
+    justify-content: center;
+}
+
+header ul li
+{
+    list-style: none;
+    margin: 0 20px;
+
+}
+
+header ul li a
+{
+    color: var(--color-aHeader);
+    font-size: var(--size-aHeader);
+    
+    padding: 10px 0px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    
+}
+
+.JavaX
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    background-color: var(--background-JX);
+    border-radius: 15%;
+}
+
+.JavaX a
+{
+    color: var(--color-JX);   
+    text-decoration: none; 
+    font-size: var(--size-JX);
+
+}
+
+
+
+/* background */
+
+main
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background-image: url(Images/projects.jpg);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: soft-light;
+    background-color: rgba(10, 10, 10, 0.562);
+}
+
+main article
+{
+    width: 70%;
+}
+
+main article h1, main article p
+{
+    text-align: center;
+    color: white;
+}
+
+main article h1
+{
+    font-size: var(--size-h1Main);
+}
+main article p
+{
+    font-size: var(--size-pMain);
+}
+
+/* what is */
+
+#whatIs
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+#whatIs article
+{
+    padding: 10px;
+    width: 45%;
+}
+
+.imgWhat img
+{
+    width: 55%;
+}
+
+.img2
+{
+    transform: translateY(-50px) translateX(100px);
+    width: 360px;
+}
+
+.textWhat h2, .textWhat p
+{
+    padding: 8px;
+}
+
+.textWhat h2
+{
+    font-size: var(--size-h2);
+}
+.textWhat p
+{
+    font-size: var(--size-p);
+}
+
+/* Mission and Vision */
+
+#missionAndVision
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#missionAndVision article
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px;
+}
+
+#missionAndVision article img
+{
+    width: 35%;
+    padding: 10px;
+    border-radius: 30% 50px ;
+}
+
+#missionAndVision article div
+{
+    width: 40%;
+    padding: 10px;
+    margin: 5px;
+}
+
+#missionAndVision article div h2, #missionAndVision article div p
+{
+    padding: 8px;
+}
+
+#missionAndVision article div h2
+{
+    font-size: var(--size-h2);
+    border-top: solid var(--background-JX) 5px;
+}
+
+#missionAndVision article div p
+{
+    font-size: var(--size-p);
+    text-align: justify;
+}
+
+/* objetives */
+
+#objectives
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px;
+}
+
+#objectives article
+{
+    width: 40%;
+}
+
+#objectives article h2, #objectives article p
+{
+    padding: 8px;
+}
+
+#objectives article h2
+{
+    font-size: var(--size-h2);
+    letter-spacing: 2px;
+    border-top: solid var(--background-JX) 5px;
+
+}
+
+#objectives article p
+{
+    font-size: var(--size-p);
+    text-align: justify;
+}
+
+#objectives div
+{
+    width: 45%;
+}
+
+#objectives div h2, #objectives div ul
+{
+    padding: 8px;
+}
+
+#objectives div h2
+{
+    font-size: var(--size-h2);
+}
+
+#objectives div ul li
+{
+    font-size: var(--size-p);
+    padding: 5px;
+    text-align: justify;
+}
+
+
+
+
+/* footer */
+
+footer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: var(--background-footer);
+}
+
+.logos
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    width: 50%;
+}
+
+.logos img
+{
+    width: 60px;
+}
+
+footer nav
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.JavaX
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    background-color: var(--background-JX);
+    border-radius: 15%;
+}
+
+.JavaX a
+{
+    color: var(--color-JX);   
+    text-decoration: none; 
+    font-size: var(--size-JX);
+
+}
+
+footer nav ul
+{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer nav ul li
+{
+    padding: 10px;
+    list-style: none;
+    margin: 10px;
+}
+
+footer nav ul li a
+{
+    text-decoration: none;
+    font-size: var(--size-aHeader);
+    color: var(--color-aFooter);
+    letter-spacing: 1px;
+}
+
+footer span
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer span a
+{
+    padding: 10px;
+    margin: 5px;
+}
+
+footer span a i
+{
+    color: var(--color-icon);
+    padding: 0 5px;
+}
+
+footer h4
+{
+    color: var(--color-copy);
+}
+
