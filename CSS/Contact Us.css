@@ -336,7 +336,10 @@ footer nav
 
 .JavaX
 {
-    padding: 0 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
     background-color: var(--background-JX);
     border-radius: 15%;
 }
@@ -395,6 +398,7 @@ footer h4
 {
     color: var(--color-copy);
 }
+
 
 
 /* media 800px */
