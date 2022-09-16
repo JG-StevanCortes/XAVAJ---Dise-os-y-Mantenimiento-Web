@@ -10,12 +10,11 @@
 
 /* header */
 --color-aHeader: white;
---color-JX: white;
+--color-JX: black;
 
 --size-aHeader: 20px;
---size-JX: 30px;
+--size-JX: 22px;
 
---background-header: white;
 
 
 /* main */
@@ -54,78 +53,7 @@
 }
 
 
-/* header */
 
-/* down */
-
-header.down
-{
-    background-color: var(--background-header);
-
-    padding: 5px 10px;
-    z-index: 10;
-
-    border-bottom: solid black 2px;
-}
-
-header.down a
-{
-    color: black;
-}
-
-
-header
-{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    position: fixed;
-    transition: 0.7s;
-    
-    top: 0;
-    right: 0;
-    left: 0;
-
-    padding: 15px 20px;
-    font-family: Helvetica, sans-serif;
-}
-
-
-
-
-header ul
-{
-    display: flex;
-    justify-content: center;
-}
-
-header ul li
-{
-    list-style: none;
-    margin: 0 20px;
-
-}
-
-header ul li a
-{
-    color: var(--color-aHeader);
-    font-size: var(--size-aHeader);
-    
-    padding: 10px 0px;
-    text-decoration: none;
-    letter-spacing: 1px;
-    
-}
-
-.JX a
-{
-    font-size: var(--size-JX);
-    color: var(--color-JX);
-
-    text-decoration: none;
-
-}
 
 
 /* background */
@@ -301,6 +229,7 @@ main article p
 #projects article
 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
@@ -312,7 +241,7 @@ main article p
     width: 50%;
     padding: 20px;
     background-color: var(--background-JX);
-    border-radius: 40px 30%;
+    border-radius: 40px 40%;
 }
 
 #projects article div h3, #projects article div p, #projects article div span
@@ -324,7 +253,7 @@ main article p
 {
     font-size: var(--size-h2);
     text-decoration: none;
-    color: black;
+    color: white;
     letter-spacing: 1px;
 }
 
@@ -369,9 +298,10 @@ main article p
 
 #projects article span img
 {
-    width: 200px;
+    width: 250px;
     height: 130px;
     margin: 5px;
+    border-radius: 10%;
 }
 
 .img5
@@ -381,124 +311,4 @@ main article p
 }
 
 
-
-/* footer */
-
-footer
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    margin-top: 20px;
-    background-color: var(--background-footer);
-}
-
-.logos
-{
-    display: flex;
-    justify-content: space-between;
-    margin: 20px;
-    width: 50%;
-}
-
-.logos img
-{
-    width: 60px;
-}
-
-footer nav
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
-}
-
-.JavaX
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 20px;
-    background-color: var(--background-JX);
-    border-radius: 15%;
-}
-
-.JavaX a
-{
-    color: var(--color-JX);   
-    text-decoration: none; 
-    font-size: var(--size-JX);
-
-}
-
-footer nav ul
-{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-}
-
-footer nav ul li
-{
-    padding: 10px;
-    list-style: none;
-    margin: 10px;
-}
-
-footer nav ul li a
-{
-    text-decoration: none;
-    font-size: var(--size-aHeader);
-    color: var(--color-aFooter);
-    letter-spacing: 1px;
-}
-
-footer span
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-footer span a
-{
-    padding: 10px;
-    margin: 5px;
-}
-
-footer span a i
-{
-    color: var(--color-icon);
-    padding: 0 5px;
-}
-
-footer h4
-{
-    color: var(--color-copy);
-}
-
-
-/* media 800px */
-
-@media (max-width: 800px)
-{
-
-    .services article
-    {
-        width: 80%;
-    }
-    header
-    {
-        display: none;
-    }
-
-    footer
-    {
-        display: none;
-    }
-}
 

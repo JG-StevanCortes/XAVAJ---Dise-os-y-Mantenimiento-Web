@@ -1,0 +1,94 @@
+:root
+{
+    /* header */
+
+
+    --color-a: white;
+    --size-a: 20px;
+
+    /* submenu */
+
+    --color-background: rgba(255, 0, 0, 0.756) ;
+
+    /* topics */
+    --color-background3: white;
+    --color-background2:  rgba(200, 0, 0);;
+
+    --color-h1: rgba(131, 179, 42, 0.849);
+    --color-p: black;
+
+    /* font size */
+
+--size-h1: 60px;
+--size-h2: 40px;
+--size-h3: 22px;
+--size-p: 22px;
+--size-a: 20px;
+
+
+}
+/* topics */
+
+#topics
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#topics article
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 50px 20px ;
+    padding: 50px 20px;
+    background-color: red;
+    border-radius: 30px;
+}
+
+#topics article div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    width: 85%;
+    padding: 50px 20px;
+}
+
+#topics article div h2, #topics article div p
+{
+    padding: 15px 10px;
+}
+
+#topics article  h2
+{
+    background-color: white;
+    border-radius: 30px;
+    width: 50%;
+    text-align: center ;
+}
+
+#topics article div p
+{
+    font-size: var(--size-p);
+}
+
+
+
+#topics article img
+{
+    background-color: white;
+    border-radius: 50px;
+    width: 30%;
+}
+
+#topics article iframe
+{
+    width: 80%;
+    height: 400px;
+}

@@ -17,6 +17,21 @@
 
     --color-background: rgba(255, 0, 0, 0.756) ;
 
+    /* topics */
+    --color-background3: white;
+    --color-background2:  rgba(200, 0, 0);;
+
+    --color-h1: rgba(131, 179, 42, 0.849);
+    --color-p: black;
+
+    /* font size */
+
+--size-h1: 60px;
+--size-h2: 40px;
+--size-h3: 22px;
+--size-p: 22px;
+--size-a: 20px;
+
 
 }
 
@@ -225,6 +240,102 @@ main article h1, main article p
     color: white;
 }
 
+/* Topics
+
+#topics{
+    display: flex;
+    flex-direction: column;
+
+}
+#topics article{
+    display: flex;
+    align-items: center;
+
+    height: ;
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    background-color: var(--color-background);
+}
+
+#suma, #resta, #multiplicacion, #division, #area, #perimetro, #poligonos{
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 4%;
+    padding: 6%;
+    background-color: var(--color-background3);
+    border-radius: 10px;
+}
+
+.textTopics{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.textTopics h1{
+    padding: 20% 10;
+    color: var(--color-h1);
+    font-size: var(--font_size-h1);
+}
+
+.textTopics p{
+    font-size: var(--font_size-p);
+    color: var(--color-p);
+    margin: var(--margin-p);
+}
+
+.textTopics ul li{
+    color: white;
+    margin: var(--margin-p);
+    font-size: var(--font_size-p);
+}
+
+.imgTopics{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    background-color: white;
+}
+
+.imgTopics img{
+    width: 80%;
+}
+
+.imgTopic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 40vh;
+}
+
+.imgTopics img{
+    width: 80%;
+}
+
+.imgTopics img:hover{
+    transform: scale(1.05);
+    transition: all .3s ease;
+}
+
+.video{
+    width: 700px; 
+    height: 315px; 
+}
+
+.video:hover{
+    transform: scale(1.1);
+    transition: all .5s ease;
+}
+
 main article h1
 {
     font-size: var(--size-h1Main);
@@ -232,8 +343,71 @@ main article h1
 main article p
 {
     font-size: var(--size-pMain);
-}
+} */
+
+
 
 
 /* topics */
 
+#topics
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#topics article
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 20px ;
+    padding: 50px 20px;
+    background-color: red;
+    border-radius: 30px;
+}
+
+#topics article div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    width: 40%;
+}
+
+#topics article div h2, #topics article div p
+{
+    padding: 15px 10px;
+}
+
+#topics article  h2
+{
+    background-color: white;
+    border-radius: 30px;
+    width: 100%;
+    text-align: center ;
+}
+
+#topics article div p
+{
+    font-size: var(--size-p);
+}
+
+
+
+#topics article img
+{
+    background-color: white;
+    border-radius: 50px;
+    width: 30%;
+}
+
+#topics article iframe
+{
+    width: 40%;
+    height: 400px;
+}

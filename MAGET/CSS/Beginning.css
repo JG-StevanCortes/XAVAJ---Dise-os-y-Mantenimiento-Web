@@ -254,12 +254,13 @@ main
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 70vh;
     background-image: url(../../CSS/Images/Mates/Students.jpeg);
     background-position: center;
     background-size: cover;
     background-blend-mode: soft-light;
     background-color: rgba(10, 10, 10, 0.562);
+    border-radius: 0%  0% 20% 20%;
 }
 
 main article
@@ -370,4 +371,24 @@ main article p
 {
     font-size: var(--size-p);
     text-align: justify;
+}
+
+
+@media(max-width: 760px)
+{
+    main article
+    {
+        width: 95%;
+    }
+
+    .imgWhat img 
+    {
+        padding: 0;
+        width: 45;
+    }
+
+    #whatIs article 
+    {
+       width: 50%; 
+    }
 }
