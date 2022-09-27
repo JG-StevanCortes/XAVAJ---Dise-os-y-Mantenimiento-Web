@@ -254,7 +254,7 @@ main
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    height: 100vh;
     background-image: url(../../CSS/Images/Mates/Students.jpeg);
     background-position: center;
     background-size: cover;
@@ -373,6 +373,72 @@ main article p
     text-align: justify;
 }
 
+ /* parte de abajo */
+
+.parte-de-abajo{
+    width: auto;
+    margin: 0px;
+    margin-top: 5px;
+    padding: 0px 0px 5px 0px;
+    background-color: black;
+}
+
+.puto{
+    position: relative;
+    padding: 10px 0px;
+}
+
+.puto h1{
+    margin: 0 0 38px;
+    font-family: "Open sans";
+    color: red;
+    text-transform: uppercase;
+}
+.title-row{
+    text-align: center !important;
+}
+.text-center{
+    text-align: center;
+}
+
+.parte-de-abajo p{
+    font-family: "Open sans";
+    color: white;
+    margin: 20px;
+    font-size: 30px;
+}
+
+.parte-de-abajo ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0px 0px;
+    text-align: center;
+}
+
+.info li{
+    text-transform: uppercase;
+    color: white;
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+}
+
+.info li a{
+    display: block;
+    padding: 20px;
+    color: white;
+    font-family: "Open sans";
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.info li a:hover{
+    transform: scale(1.1);
+    color: rgb(255, 0,0);
+    box-shadow: 0px 0px 5px 0px;
+    background-color: rgb(43, 35, 35);
+}
 
 @media(max-width: 760px)
 {

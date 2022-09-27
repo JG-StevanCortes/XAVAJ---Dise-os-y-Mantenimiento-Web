@@ -25,7 +25,6 @@
 
 /* background */
 
---background-JX: rgb(253, 163, 17);
 --background-a: rgba(255, 255, 255, 0.836);
 
 /* our working process */
@@ -192,12 +191,12 @@ main article p
 {
     border: solid var(--border-WorkingProcess) 5px;
     border-radius: 50%;
+    padding: 20px;
     
 }
 
 .workingProcess article div i
 {
-    padding: 20px;
     color: var(--color-iWorkingProcess);
 }
 
@@ -238,9 +237,9 @@ main article p
 
 #projects article div
 {
-    width: 50%;
+    width: 45%;
     padding: 20px;
-    background-color: var(--background-JX);
+    background-color: #2df144;
     border-radius: 40px 40%;
 }
 
@@ -288,7 +287,7 @@ main article p
 
 #projects article span
 {
-    width: 40%;
+    width: 50%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
